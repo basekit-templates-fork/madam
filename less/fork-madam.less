@@ -6,6 +6,12 @@ a {
     color: @color-swatch4;
 }
 
+.template-content {
+    @media @tablet {
+        margin: 20px auto;
+    }
+}
+
 .logo-container.container {
     max-width: 100%;
     padding: 1% 2%;
@@ -36,10 +42,31 @@ a {
     align-self: auto;
 }
 
+.navigation-toggle:before {
+    background-color: @color-swatch3;
+    box-shadow: 0 6px 0 @color-swatch3;
+}
+
+.navigation-toggle:after,
+.open .navigation-toggle:after,
+.open .navigation-toggle:before,
+.navigation-toggle:hover:after,
+.navigation-toggle:hover:before {
+    background-color: @color-swatch3;
+}
+
+.navigation-toggle:hover,
+.open .navigation-toggle {
+    background-color: transparent;
+}
+
 .page-content.container {
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    @media @tablet {
+        padding: 0 5%;
+    }
 }
 
 .feature__background-image {
@@ -47,7 +74,19 @@ a {
 }
 
 .feature__content-inner-wrap {
-    padding: 60px 20px 60px 10%;
+    padding: 60px 5% 60px 10%;
+    @media @tablet {
+        background-color: fade(@color-swatch1, 95%);
+        position: absolute;
+        width: 50.1%;
+        display: flex;
+        padding: 30px;
+    }
+    @media @mobile {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
 }
 
 .feature-container {
@@ -56,7 +95,8 @@ a {
 
 .feature__button, 
 button, 
-.button { 
+.button,
+.blogpostlist__read-more { 
     border-bottom: 5px solid @color__feature-button--background;
     padding: 0;
     background-color: transparent;
@@ -66,6 +106,16 @@ button,
         border-bottom: 5px solid @color__feature-button--background--hover;
         background-color: transparent;
         color: @color__feature-button--text;
+    }
+}
+
+.blogpostlist__read-more {
+    padding-bottom: 15px;
+}
+
+.feature__button {
+    @media @tablet {
+        margin: 0px auto;
     }
 }
 
@@ -83,6 +133,9 @@ button,
         &:hover {
             background-color: lighten(@color-swatch4,10%);
             border-bottom: 0;
+        }
+        @media @tablet {
+            background-color: @color-swatch4!important;
         }
     }
     .signupform__label {
@@ -110,12 +163,24 @@ button,
     }
     .socialicons__social-list {
         text-align: right;
+        @media @tablet {
+            text-align: center;
+        }
     }
     .socialicons__social-item a:hover {
         background-color: transparent;
         border: 0;
     }
 }
+
+.socialicons__social-link:hover:before {
+    color: @color-swatch4;
+}
+
+.socialicons__social-link {
+    border: 1px solid @color-swatch7;
+}
+
 
 .signupform__label, 
 .contactform__legend, 
@@ -133,7 +198,19 @@ button,
 }
 
 
+.slide-navigation .button {
+    background-color: fade(@color-swatch4, 20%)!important;
+    border: 0;
+}
 
+.responsiveslideshow__button:after {
+    display: none;
+}
+
+.responsiveslideshow__pagination-item .button {
+    width: 20px;
+    border-radius: 0;
+}
 
 
 // Style for Signup Form in Header and Footer
@@ -292,5 +369,22 @@ form:before, .form:before {
      -moz-order: @order;
       -ms-order: @order;
           order: @order;
+}
+
+
+.ecomproductslist__button {
+    padding: 4px 15px;
+    border-bottom: 5px solid #e6e6e6;
+}
+
+.button--quantity {
+    background-color: @color-swatch4;
+    border: 0;
+    color: white;
+    &:hover {
+        background-color: lighten(@color-swatch4,10%);
+        border: 0;
+        color: white;
+    }
 }
 
