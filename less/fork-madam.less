@@ -140,6 +140,9 @@ button,
     form, .form {
         background-color: transparent;
     }
+    .widget__signupform {
+        padding: 0px 10% 12px;
+    }
     .signupform__button {
         background-color: @color-swatch4;
         color: @color-swatch1;
@@ -174,8 +177,10 @@ button,
     -ms-flex-item-align: auto;
     align-self: auto;
     text-align: right;
-    font-family: @font__button--font-family;
-    font-size: @font__button--font-size;
+    a, p, span {
+        font-family: @font__button--font-family;
+        font-size: @font__button--font-size;
+    }
     @media @tablet {
         display: block;
     }
