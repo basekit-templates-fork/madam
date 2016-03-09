@@ -1,0 +1,737 @@
+// --------------------------------
+// Bakery: CSS > Widgets
+// --------------------------------
+
+
+// -----------------------------
+// #Template
+// -----------------------------
+
+.template-content {
+    margin: 40px auto;
+}
+
+.page-content.container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.template-content {
+    margin: 40px auto;
+}
+
+.page-content.container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-wrapper {
+    padding: 1% 2%;
+}
+
+.bk-pt-default .logo-header {
+    border-bottom: 1px solid #e2e2e2!important;
+}
+
+
+
+
+
+// -----------------------------
+// #Header
+// -----------------------------
+
+
+.logo-header {
+    display: block;
+    width: 100%;
+    background-color: @color__header--background;
+    @media @tablet {
+        position: relative;
+    }
+}
+
+.logo-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media @tablet {
+        display: block;
+    }
+}
+
+.logo-container.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-logo {
+    // Flex child
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+
+    // Layout
+    text-align:center;
+    max-width: 100%;
+
+    @media @tablet {
+        display: block;
+    }
+
+    img, .logo {
+        line-height: 0;
+    }
+}
+
+.header-companyname {
+    // Flex child
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 10;
+    -moz-box-flex: 10;
+    -webkit-flex: 10 10 auto;
+    -ms-flex: 10 10 auto;
+    flex: 10 10 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    @media @tablet {
+        display: block;
+    }
+}
+
+.header-extendednavigation {
+    // Flex child
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    @media @tablet {
+        display: block;
+    }
+}
+
+.template-header,
+.header-line:before {
+    display: none;
+}
+
+
+
+
+// -----------------------------
+// #Feature
+// -----------------------------
+
+
+.widget__feature {
+    @media @tablet {
+        display: inline-block;
+    }
+}
+
+.feature__background-image,
+.feature__content-inner-wrap {
+    width: 50%;
+    @media @tablet {
+        width: 100%;
+    }
+}
+
+.feature__background-image {
+    height: 400px;
+    float: right;
+}
+
+.feature__headline,
+.feature__strapline {
+    width: 100%;
+    text-align: left;
+    @media @tablet {
+        text-align: center;
+    }
+}
+
+.feature__button {
+    text-align: left;
+}
+
+.feature-container {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.feature__content-wrap {
+    @media @mobile {
+        padding: 10px;
+    }
+}
+
+.feature__content-inner-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 8px;
+    padding: 60px;
+    width: 50.1%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
+    -webkit-box-align: flex-start;
+    -moz-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    overflow: auto;
+    @media @tablet {
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        display: block;
+    }
+    @media @mobile {
+        padding: 20px;
+    }
+}
+
+// -----------------------------
+// #Extra
+// -----------------------------
+
+.navigation-item.folder .navigation-item--child a {
+    color: @color__navigation--text;
+}
+
+.responsiveslideshow__figure {
+    padding-bottom: 30%;
+}
+
+.button--pagination.responsiveslideshow__button {
+    height: 20px;
+}
+
+button, 
+.button, 
+.blogpostlist__read-more {
+    background-color: @color__button--background;
+    &:hover {
+        @color__button--background--hover;
+    }
+}
+
+
+
+
+
+// ---------------------------------
+// Breakpoints for slideshow layouts
+// ---------------------------------
+
+
+@slideshow-large: ~"only screen and (min-width : 1300px)";
+@slideshow-medium: ~"only screen and (min-width : 850px) and (max-width : 1300px)";
+@slideshow-small: ~"only screen and (max-width : 850px)";
+
+
+.responsiveslideshow__slide-item {
+    display: block !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+
+    &.current {
+        opacity: 1;
+    }
+}
+
+
+
+
+// ------------------------------
+// Homepage Responsive Slideshow
+// ------------------------------
+
+.widget__responsiveslideshow {
+    position: relative;
+
+    // Figure
+    .figure {
+        background-color: transparent;
+        min-height: 0;
+    }
+}
+
+.template-content {
+    .responsiveslideshow__figure,
+    .responsiveslideshow__slides-list {
+        padding-bottom: 40%;
+    }
+}
+
+// Slideshow Height
+.homepage-slideshow {
+    .responsiveslideshow__figure, .responsiveslideshow__slides-list {
+        padding-bottom: 30%;
+    }
+}
+
+.responsiveslideshow .contain .figure {
+    height: 100%;
+}
+
+.homepage-slideshow {
+    .responsiveslideshow__image-title {
+        font-size: @font-swatch1-font-size;
+        line-height: @font-swatch1-line-height;
+        color: @font-swatch1-color;
+        font-weight: @font-swatch1-font-weight;
+        font-family: @font-swatch1-font-family;
+    }
+}
+
+.homepage-slideshow {
+    .slide-navigation {
+        @media @tablet {
+            top: 37%;
+        }
+
+        @media @mobile {
+            top: 27%;
+        }
+    }
+}
+
+
+// Slides List
+// ------------------------------
+
+.responsiveslideshow__slides-list {
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+
+// Slideshow Item
+// ------------------------------
+
+
+.responsiveslideshow__slide-item {
+    position: relative;
+}
+
+// Prevents two slides from displaying at the same time
+// because of slow JS state changes
+
+.slide-item.current + .slide-item {
+    display: none;
+}
+
+.responsiveslideshow__image {
+    display: none;
+}
+
+
+// Figure
+// ------------------------------
+
+
+.responsiveslideshow__figure {
+    background-size: cover;
+    background-position: center;
+}
+
+
+// Slide Navigation
+// ------------------------------
+
+
+.slide-navigation {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    min-height: 50px;
+    margin: 0;
+
+    @media @tablet {
+        top: 37%;
+    }
+
+    @media @mobile {
+        top: 32%;
+    }
+
+
+    // Button
+    // ------------------------------
+
+
+    .button {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        text-align: center;
+        background-color: @color__button--background!important;
+        box-shadow: none;
+        width: 50px;
+        height: 50px!important;
+        line-height: 50px;
+        font-size: 36px;
+
+
+        @media @bp-global-small {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        &:before {
+            margin: 0;
+            color: #ffffff;
+            background-color: @color__button--background!important;
+        }
+    }
+
+
+
+
+    // Control Text
+    // ------------------------------
+
+
+    .control-text {
+        display: none;
+    }
+}
+
+
+
+
+// Previous Button
+// ------------------------------
+
+.responsiveslideshow__previous-button:before,
+.responsiveslideshow__next-button:after {
+    @media @mobile {
+        font-size: 26px!important;
+    }
+}
+
+
+.responsiveslideshow__previous-button {
+    left: 0px;
+
+    @media @tablet {
+        left: 0;
+    }
+
+    // Icon
+    &:before {
+        content: '\f104';
+        display: block;
+        margin: 0;
+        color: #ffffff;
+        background-color: @color__button--background;
+    }
+}
+
+
+
+
+// Next Button
+// ------------------------------
+
+
+.responsiveslideshow__next-button {
+    right: 0px;
+
+    @media @tablet {
+        right: 0;
+    }
+
+    // Icon
+    &:after {
+        content: '\f105';
+        display: block;
+        margin: 0;
+        padding-left: 0.1em;
+        color: #ffffff;
+        background-color: @color__button--background!important;
+    }
+}
+
+
+// Pause Toggle
+// ------------------------------
+
+
+.responsiveslideshow__pause-toggle {
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    margin: auto;
+    margin-left: 40px;
+
+    @media @mobile {
+        display: none;
+    }
+
+    // Icon
+    &:before {
+        display: block;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    // Play Icon
+
+    &.pause:before {
+        content: '\f04b';
+    }
+}
+
+
+// Slideshow Captions
+// ------------------------------
+
+
+// Caption
+// ------------------------------
+
+.responsiveslideshow .caption {
+    .flex-display;
+    .flex-direction(column);
+    .justify-content(center);
+
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    background-color: fade(@color__slideshow-caption--background, 10%);
+    text-align: center;
+    display: flex;
+
+    @media @tablet {
+        padding: 10px 25px 15px;
+    }
+
+    @media @mobile {
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 5px 20px 5px;
+        display: none;
+    }
+
+}
+
+
+// Slideshow Pagination
+// ------------------------------
+
+
+// Pagination Item
+// ------------------------------
+
+
+.responsiveslideshow .responsiveslideshow__pagination-item {
+
+    // Button
+
+    .button {
+        opacity: .4;
+        background-color: @color__body--background;
+    }
+
+    // Selected Button
+
+    &.selected .button {
+        opacity: 1;
+        background-color: @color__body--background;
+    }
+}
+
+
+// Slide Pagination
+// ------------------------------
+
+.slide-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 101px;
+    right: 101px;
+    min-height: 50px;
+
+    @media @bp-global-small {
+        min-height: 40px;
+        bottom: -4px;
+    }
+}
+
+
+// Pagination List
+// ------------------------------
+
+
+.responsiveslideshow__pagination-list {
+    text-align: center;
+    font-size: 0.1px;
+    min-height: 50px;
+    overflow: hidden;
+    padding-top: 14px;
+
+    @media @bp-global-small {
+        padding-top: 10px;
+    }
+}
+
+
+// Pagination Item
+// ------------------------------
+
+
+.responsiveslideshow__pagination-item {
+    display: inline-block;
+    margin: 3px 5px;
+
+    // Button
+
+    .button {
+        width: 10px;
+        height: 10px;
+        display: block;
+        overflow: hidden;
+        text-indent: -120%;
+        border-radius: 7px;
+        padding: 0;
+
+        @media @bp-global-small {
+            width: 8px;
+            height: 8px;
+        }
+    }
+
+
+}
+
+
+// Columns variations
+// ---------------------------------
+
+
+@media @bp-global-columns {
+
+    .responsivecolumns {
+
+        // Slideshow Navigation
+        .slide-navigation {
+            background-color: transparent;
+        }
+
+
+        // 2 columns
+        .columns-two-left,
+        .columns-two-right {
+            .responsiveslideshow__slides-list.
+            .responsiveslideshow__figure {
+                padding-bottom: 54%;
+            }
+        }
+
+        // 4 columns
+        .columns-four-first,
+        .columns-four-second,
+        .columns-four-third,
+        .columns-four-fourth {
+
+        }
+    }
+}
+

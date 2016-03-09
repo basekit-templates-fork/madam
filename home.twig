@@ -1,0 +1,60 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<div class="logo-header">
+    <div class="logo-container container">
+        <div class="header-logo">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        </div>
+        <div class="header-companyname">
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+        <div class="header-extendednavigation">
+            {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
+        </div>
+         <div class="social-bar">
+            {{widget('profile', 'socialbar', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        </div>
+    </div>
+</div>
+
+<div class="feature-container clearfix">
+    <div class="feature-right-container">
+        {{widget('feature', 'feature-right', {
+            "header": "profile",
+            "strapline": "profile",
+            "defaultBgImg": asset('images/feature-img1.jpg'),
+            "positionTopPercentage": "50",
+            "showBtn": true,
+            "buttonText": "Lorem Ipsum"
+        })|raw}}
+    </div>
+</div>
+
+    <div class="homepage-signup">
+        {{widget('signupform', 'emailsignup', {
+          'text': 'Submit',
+          'label': 'Sign Up',
+          'formTitle': 'Signup Form',
+          'email': 'profile'
+        })|raw}}
+    </div>
+
+<!-- Container -->
+<div class="page-content container">
+
+    <!-- Page Content -->
+    <section class="template-content">
+    	<!-- Main Widet Zone -->
+       	{{zone('main')|raw}}
+    </section>
+    <!-- End Page Content -->
+
+</div>
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

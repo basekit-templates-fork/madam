@@ -1,0 +1,296 @@
+// --------------------------------
+// Bakery: CSS > Widgets
+// --------------------------------
+
+a {
+    color: @color-swatch4;
+}
+
+.logo-container.container {
+    max-width: 100%;
+    padding: 1% 2%;
+    border-bottom: 1px solid @color-swatch3;
+}
+
+.widget__logo {
+    margin-bottom: 10px;
+}
+
+.companyname {
+    margin: 0;
+}
+
+.header-companyname {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.page-content.container {
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.feature__background-image {
+    height: 600px;
+}
+
+.feature__content-inner-wrap {
+    padding: 60px 20px 60px 10%;
+}
+
+.feature-container {
+    margin-bottom: -8px;
+}
+
+.feature__button, 
+button, 
+.button { 
+    border-bottom: 5px solid @color__feature-button--background;
+    padding: 0;
+    background-color: transparent;
+    color: @color__feature-button--text;
+    padding-bottom: 10px;
+    &:hover {
+        border-bottom: 5px solid @color__feature-button--background--hover;
+        background-color: transparent;
+        color: @color__feature-button--text;
+    }
+}
+
+.homepage-signup {
+    background-color: @color-swatch3;
+    padding: 0px 10% 12px;
+    form, .form {
+        background-color: transparent;
+    }
+    .signupform__button {
+        background-color: @color-swatch4;
+        color: @color-swatch1;
+        padding: 9px 15px;
+        border-bottom: 0;
+        &:hover {
+            background-color: lighten(@color-swatch4,10%);
+            border-bottom: 0;
+        }
+    }
+    .signupform__label {
+        color: @color__feature-button--text;
+    }
+}
+
+.social-bar {
+    // Flex child
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    @media @tablet {
+        display: block;
+    }
+    .socialicons__social-list {
+        text-align: right;
+    }
+    .socialicons__social-item a:hover {
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+.signupform__label, 
+.contactform__legend, 
+.blogsearch__legend {
+    font-family: @font__h2--font-family;
+    font-size: @font__h2--font-size;
+    font-weight: @font__h2--font-weight;
+    line-height: @font__h2--line-height;
+    letter-spacing: @font__h2--letter-spacing;
+}
+
+.gallery .gallery-item .image-title {
+    font-size: @font__h2--font-size;
+    font-weight: @font__h2--font-weight;
+}
+
+
+
+
+
+// Style for Signup Form in Header and Footer
+.homepage-signup .signupform .form,
+.template-footer .signupform .form {
+    border: none;
+    .label {
+        font-family: @font__button--font-family;
+        font-size: @font__button--font-size;
+        font-weight: @font__h3--font-weight;
+        line-height: @font__h3--line-height;
+        letter-spacing: @font__h3--letter-spacing;
+        margin: 0;
+        padding: 0;
+        // Remove label underline
+        &:after {
+            display: none;
+        }
+    }
+    .input {
+        height: 45px;
+        background-color: @color__body--background;
+        border: none;
+    }
+    .button {
+        @media @tablet {
+            background-color: lighten(@color__button--background, 20%);
+            &:hover {
+                background-color: @color__button--background--hover;
+            }
+        }
+    }
+}
+
+// Add flexbox to signup form in Header and Footer
+.homepage-signup .signupform__form-body,
+.template-footer .signupform__form-body {
+
+    .flex(@display: flex);
+    .flex-wrap(@wrap: nowrap);
+    .justify-content(@justify: center);
+    .align-items(@align: flex-end);
+    .align-content(@align: stretch);
+
+    @media @mobile {
+        .flex-wrap(@wrap: wrap);
+        .form-group:last-child {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .form-group:first-child {
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        @media @mobile {
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100% !important;
+        }
+    }
+}
+
+// Nested flexbox in signup form for label and input
+.homepage-signup .signupform .form-group:first-child,
+.template-footer .signupform .form-group:first-child {
+    .flex(@display: flex);
+    .flex-wrap(@wrap: wrap);
+    .justify-content(@justify: flex-end);
+    .align-items(@align: flex-end);
+    .align-content(@align: stretch);
+
+    .label {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin-bottom: 7px;
+    }
+    .input {
+        -webkit-flex: 1 1 30%;
+        -ms-flex: 1 1 30%;
+        flex: 1 1 30%;
+        min-width: 300px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        @media @mobile {
+            min-width: inherit;
+            margin-left: 0;
+            text-align: center;
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+        }
+    }
+}
+
+form:before, .form:before {
+    display: none;
+}
+
+
+
+
+// -------------------------------------------
+// 2. #FLEXBOX MIXINS
+// -------------------------------------------
+
+.flex(@display: flex) {
+    display: ~"-webkit-@{display}";
+    display: ~"-moz-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+.flex-direction(@direction: row) {
+  -webkit-flex-direction: @direction;
+     -moz-flex-direction: @direction;
+      -ms-flex-direction: @direction;
+          flex-direction: @direction;
+}
+.flex-wrap(@wrap: nowrap) {
+  -webkit-flex-wrap: @wrap;
+     -moz-flex-wrap: @wrap;
+      -ms-flex-wrap: @wrap;
+          flex-wrap: @wrap;
+}
+.justify-content(@justify: flex-start) {
+  -webkit-justify-content: @justify;
+     -moz-justify-content: @justify;
+      -ms-justify-content: @justify;
+          justify-content: @justify;
+}
+.align-items(@align: stretch) {
+  -webkit-align-items: @align;
+     -moz-align-items: @align;
+      -ms-align-items: @align;
+          align-items: @align;
+}
+.align-content(@align: stretch) {
+  -webkit-align-content: @align;
+     -moz-align-content: @align;
+      -ms-align-content: @align;
+          align-content: @align;
+}
+.align-self(@align: auto) {
+  -webkit-align-self: @align;
+     -moz-align-self: @align;
+      -ms-align-self: @align;
+          align-self: @align;
+}
+.flex-order(@order: 0) {
+  -webkit-order: @order;
+     -moz-order: @order;
+      -ms-order: @order;
+          order: @order;
+}
+
