@@ -42,6 +42,10 @@ a {
     align-self: auto;
 }
 
+.navigation-toggle {
+    margin-bottom: 0;
+}
+
 .navigation-toggle:before {
     background-color: @color-swatch3;
     box-shadow: 0 6px 0 @color-swatch3;
@@ -53,6 +57,14 @@ a {
 .navigation-toggle:hover:after,
 .navigation-toggle:hover:before {
     background-color: @color-swatch3;
+}
+
+.navigation-toggle:hover:before {
+    box-shadow: 0 6px 0 @color-swatch7;
+}
+
+.open .navigation-toggle:hover:before {
+    box-shadow: 0 6px 0 transparent;
 }
 
 .navigation-toggle:hover,
