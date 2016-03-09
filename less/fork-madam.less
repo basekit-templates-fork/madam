@@ -243,6 +243,7 @@ button,
 
 
 // Style for Signup Form in Header and Footer
+.social-bar .signupform .form,
 .homepage-signup .signupform .form,
 .template-footer .signupform .form {
     border: none;
@@ -275,6 +276,7 @@ button,
 }
 
 // Add flexbox to signup form in Header and Footer
+.social-bar .signupform__form-body,
 .homepage-signup .signupform__form-body,
 .template-footer .signupform__form-body {
 
@@ -307,6 +309,7 @@ button,
 }
 
 // Nested flexbox in signup form for label and input
+.social-bar .signupform .form-group:first-child,
 .homepage-signup .signupform .form-group:first-child,
 .template-footer .signupform .form-group:first-child {
     .flex(@display: flex);
@@ -419,6 +422,9 @@ form:before, .form:before {
           order: @order;
 }
 
+.blogpostlist__post-excerpt {
+    margin: 0;
+}
 
 .ecomproductslist__button {
     padding: 4px 15px;
