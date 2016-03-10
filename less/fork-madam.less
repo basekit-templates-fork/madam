@@ -224,10 +224,13 @@ button,
         background-color: #f7f7f7!important;
     }
     .signupform__button {
-        background-color: black;
+        background-color: @color-swatch4;
         color: white;
         padding: 8px 10px;
         border: 0;
+        &:hover {
+            background-color: lighten(@color-swatch4, 10%);
+        }
     }
 }
 
@@ -290,9 +293,12 @@ form:before, .form:before {
 .template-footer {
     .signupform__button {
         padding: 8px 10px;
-        background-color: @color-swatch3!important;
+        background-color: @color-swatch4!important;
         color: white;
         border: 0;
+        &:hover {
+            background-color: lighten(@color-swatch4, 10%);
+        }
     }
     p, a, span {
         font-family: @font__button--font-family;
