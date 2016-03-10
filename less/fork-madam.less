@@ -2,6 +2,10 @@
 // Madam: CSS > Widgets
 // --------------------------------
 
+
+// #PAGE STYLES + HEADER
+// -------------------------------------------
+
 a {
     color: @color-swatch4;
 }
@@ -42,6 +46,19 @@ a {
     align-self: auto;
 }
 
+.page-content.container {
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    @media @tablet {
+        padding: 0 5%;
+    }
+}
+
+
+// #NAVIGATION
+// -------------------------------------------
+
 .navigation-toggle {
     margin-bottom: 0;
 }
@@ -72,14 +89,9 @@ a {
     background-color: transparent;
 }
 
-.page-content.container {
-    max-width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    @media @tablet {
-        padding: 0 5%;
-    }
-}
+
+// #FEATURE
+// -------------------------------------------
 
 .feature__background-image {
     height: 600px;
@@ -124,15 +136,15 @@ button,
     }
 }
 
-.blogpostlist__read-more {
-    padding-bottom: 15px;
-}
-
 .feature__button {
     @media @tablet {
         margin: 0px auto;
     }
 }
+
+
+// #HOMEPAGE SIGN UP
+// -------------------------------------------
 
 .homepage-signup {
     background-color: @color-swatch3;
@@ -160,6 +172,10 @@ button,
         color: @color__feature-button--text;
     }
 }
+
+
+// #SOCIAL BAR
+// -------------------------------------------
 
 .social-bar {
     // Flex child
@@ -200,6 +216,9 @@ button,
     .twitter__avatar {
         display: none;
     }
+    .social-social-link {
+        color: @color-swatch4;
+    }
 }
 
 .socialicons__social-link:hover:before {
@@ -210,6 +229,9 @@ button,
     border: 1px solid @color-swatch7;
 }
 
+
+// #WIDGETS
+// -------------------------------------------
 
 .signupform__label, 
 .contactform__legend, 
@@ -241,6 +263,90 @@ button,
     border-radius: 0;
 }
 
+.responsiveslideshow__previous-button:before,
+.slide-navigation .button:before,
+.responsiveslideshow__next-button:after {
+    background-color: transparent!important;
+}
+
+form:before, .form:before {
+    display: none;
+}
+
+
+// #TEMPLATE-FOOTER
+// -------------------------------------------
+
+.template-footer {
+    .signupform__button {
+        padding: 8px 10px;
+        background-color: black;
+        color: white;
+        border: 0;
+    }
+    p, a, span {
+        font-family: @font__button--font-family;
+    }
+}
+
+.template-footer .signupform .form .input {
+    background-color: #F7F7F7;
+}
+
+.template-footer .signupform .form-group:first-child .input {
+    min-width: 200px;
+}
+
+.template-footer .signupform__form-group:nth-child(1) {
+    padding-top: 10px;
+}
+
+
+// #BLOG
+// -------------------------------------------
+
+.blogpostlist__post-excerpt {
+    margin: 0;
+}
+
+.blogpostlist__read-more {
+    padding-bottom: 15px;
+}
+
+
+// #ECOMMERCE
+// -------------------------------------------
+
+.ecomproductslist__button {
+    padding: 4px 15px;
+    border-bottom: 5px solid #e6e6e6;
+}
+
+.responsivecolumns {
+    .columns-four-first, 
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        .ecomproductslist__select {
+            font-size: 9px;
+        }
+    }
+}
+
+.button--quantity {
+    background-color: @color-swatch4;
+    border: 0;
+    color: white;
+    &:hover {
+        background-color: lighten(@color-swatch4,10%);
+        border: 0;
+        color: white;
+    }
+}
+
+
+// #SOCIAL BAR
+// -------------------------------------------
 
 // Style for Signup Form in Header and Footer
 .social-bar .signupform .form,
@@ -342,29 +448,6 @@ button,
     }
 }
 
-form:before, .form:before {
-    display: none;
-}
-
-.template-footer {
-    .signupform__button {
-        padding: 8px 10px;
-        background-color: black;
-        color: white;
-        border: 0;
-    }
-    p, a, span {
-        font-family: @font__button--font-family;
-    }
-}
-
-.template-footer .signupform .form .input {
-    background-color: #F7F7F7;
-}
-
-.template-footer .signupform .form-group:first-child .input {
-    min-width: 200px;
-}
 
 
 
@@ -420,25 +503,5 @@ form:before, .form:before {
      -moz-order: @order;
       -ms-order: @order;
           order: @order;
-}
-
-.blogpostlist__post-excerpt {
-    margin: 0;
-}
-
-.ecomproductslist__button {
-    padding: 4px 15px;
-    border-bottom: 5px solid #e6e6e6;
-}
-
-.button--quantity {
-    background-color: @color-swatch4;
-    border: 0;
-    color: white;
-    &:hover {
-        background-color: lighten(@color-swatch4,10%);
-        border: 0;
-        color: white;
-    }
 }
 
