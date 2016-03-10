@@ -1,7 +1,7 @@
 {
-    "name":"Bakery",
-    "thumbnail":"bakery.png",
-    "screenshot":"bakery-screenshot.jpg",
+    "name":"Madam",
+    "thumbnail":"madam.png",
+    "screenshot":"madam-screenshot.jpg",
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
