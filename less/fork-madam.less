@@ -224,7 +224,7 @@ button,
         background-color: #f7f7f7!important;
     }
     .signupform__button {
-        background-color: @color-swatch4;
+        background-color: @color-swatch4!important;
         color: white;
         padding: 8px 10px;
         border: 0;
@@ -376,7 +376,7 @@ form:before, .form:before {
         font-family: @font__button--font-family;
         font-size: @font__button--font-size;
         font-weight: @font__h3--font-weight;
-        line-height: @font__h3--line-height;
+        line-height: 20px;
         letter-spacing: @font__h3--letter-spacing;
         margin: 0;
         padding: 0;
@@ -392,9 +392,9 @@ form:before, .form:before {
     }
     .button {
         @media @tablet {
-            background-color: lighten(@color__button--background, 20%);
+            background-color: @color-swatch4;
             &:hover {
-                background-color: @color__button--background--hover;
+                background-color: lighten(@color-swatch4, 10%);
             }
         }
     }
@@ -448,12 +448,13 @@ form:before, .form:before {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
         margin-bottom: 7px;
+        line-height: 20px;
     }
     .input {
         -webkit-flex: 1 1 30%;
         -ms-flex: 1 1 30%;
         flex: 1 1 30%;
-        min-width: 300px;
+        min-width: 200px;
         margin-bottom: 0;
         margin-left: 10px;
         @media @mobile {
