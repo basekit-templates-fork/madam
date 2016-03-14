@@ -365,13 +365,16 @@ form:before, .form:before {
     padding-bottom: 15px;
 }
 
+.blogpostlist__button {
+    border-bottom: 0;
+}
+
 
 // #ECOMMERCE
 // -------------------------------------------
 
 .ecomproductslist__button {
     padding: 4px 15px;
-    border-bottom: 5px solid #e6e6e6;
 }
 
 .responsivecolumns {
@@ -385,7 +388,8 @@ form:before, .form:before {
     }
 }
 
-.button--quantity {
+.button--quantity,
+.ecomproductslist__button {
     background-color: @color-swatch4;
     border: 0;
     color: white;
@@ -394,6 +398,11 @@ form:before, .form:before {
         border: 0;
         color: white;
     }
+}
+
+.ecomproduct__category-link,
+.ecomproduct__tag-link {
+    color: @font-swatch3-color;
 }
 
 
